@@ -28,8 +28,93 @@ Junior Web developer with 4 year of overall IT experience is seeking an opportun
 - Others: Microsoft Word, Microsoft Excel, CorelDraw, Adobe Photoshop, AutoCAD
 
 ## Code Examples
-- TODO
-
+~~~~
+- class ContactBRW extends Component {
+  render() {
+    return (
+      <Container>
+        <Content>
+          <Card style={{flex: 0}}>
+            <CardItem header bordered style={{backgroundColor: '#5ba9d4'}}>
+              <Icon style={styles.icons} type="FontAwesome" name="user" />
+              <View>
+                <Text style={styles.headerText}>{this.props.second_mame}</Text>
+                <Text style={styles.headerText}>
+                  {this.props.first_name + ' ' + this.props.patronymic}
+                </Text>
+                <Text style={{color: 111}}>{this.props.post}</Text>
+              </View>
+            </CardItem>
+            <CardItem>
+              <Icon style={styles.icons} type="Ionicons" name="briefcase" />
+              <Text style={styles.phST}>{this.props.phone}</Text>
+              <Right style={{flexDirection: 'row', justifyContent: 'flex-end'}}>
+                <Button
+                  transparent
+                  onPress={() => Linking.openURL(`tel:${this.props.phone}`)}>
+                  <Icon
+                    style={styles.icons}
+                    type="MaterialIcons"
+                    name="phone"
+                  />
+                </Button>
+                <Icon
+                  style={styles.icons}
+                  type="MaterialIcons"
+                  name="comment"
+                />
+              </Right>
+            </CardItem>
+            <CardItem>
+              <Icon
+                style={styles.icons}
+                type="Ionicons"
+                name="phone-portrait"
+              />
+              <Text style={styles.phST}>{this.props.phone_hide}</Text>
+              <Right style={{flexDirection: 'row', justifyContent: 'flex-end'}}>
+                <Button
+                  transparent
+                  onPress={() =>
+                    Linking.openURL(`tel:${this.props.phone_hide}`)
+                  }>
+                  <Icon
+                    style={styles.icons}
+                    type="MaterialIcons"
+                    name="phone"
+                  />
+                </Button>
+                <Button
+                  transparent
+                  onPress={() =>
+                    Linking.openURL(`sms:${this.props.phone_hide}`)
+                  }>
+                  <Icon
+                    style={styles.icons}
+                    type="MaterialIcons"
+                    name="comment"
+                  />
+                </Button>
+              </Right>
+            </CardItem>
+            {/* <CardItem footer bordered>
+              <View>
+                <Text style={{color: '#555'}}>{this.props.category}</Text>
+                <Text style={{color: '#555'}}>{this.props.section}</Text>
+                <Text style={{color: '#555'}}>{this.props.subsection}</Text>
+                <Text style={{color: '#555'}}>{this.props.subsubsection}</Text>
+              </View>
+            </CardItem> */}
+          </Card>
+          <Content footer bordered>
+            <Accordion dataArray={this.props.userAdress} />
+          </Content>
+        </Content>
+      </Container>
+    );
+  }
+}
+~~~~
 ## Career summary
 
 **September 2016 - Present      ::       Belarussian Railways, Software engineer**
