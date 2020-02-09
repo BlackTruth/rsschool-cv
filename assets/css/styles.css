@@ -1,6 +1,23 @@
 * {
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
+.parallax {
+  /* The image used */
+  position: fixed;
+  z-index: -1;
+  background-image: url("../images/background-image.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+  min-height: 1080px;
+  min-width: 1920px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 header,
 section {
   background: tan;
@@ -44,7 +61,7 @@ header {
 }
 
 #photo {
-  background-image: url("assets/images/profile-photo.jpg");
+  background-image: url("../images/profile-photo.jpg");
   width: 100px;
   height: 100px;
 }
