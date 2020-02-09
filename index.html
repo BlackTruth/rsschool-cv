@@ -21,7 +21,7 @@
         <div class="main-information">
           <div>
             <h3>Junior Web Developer</h3>
-            <<img id="profile-photo" src="assets/images/profile-photo.jpg" />
+            <img id="profile-photo" src="assets/images/profile-photo.jpg" />
           </div>
 
           <div>
@@ -35,8 +35,6 @@
           </div>
         </div>
       </header>
-
-      <div class="separator"></div>
       <main>
         <section>
           <h3>Summary</h3>
@@ -57,7 +55,6 @@
             <li>Great team worker</li>
           </ul>
         </section>
-        <div class="separator"></div>
         <section class="skills">
           <h3>Skills</h3>
           <div class="row">
@@ -86,14 +83,112 @@
           </div>
           <div class="row">
             <div>Development tools</div>
-            <div>Microsoft Visual Studio, VS Code, DbVisualizer, Git Bash, Borland C++, Delphi, SQL Server Management Studio, PowerBuilder, Apache Web Server</div>
+            <div>
+              Microsoft Visual Studio, VS Code, DbVisualizer, Git Bash, Borland
+              C++, Delphi, SQL Server Management Studio, PowerBuilder, Apache
+              Web Server
+            </div>
           </div>
           <div class="row">
             <div>Others</div>
-            <div>Microsoft Word, Microsoft Excel, CorelDraw, Adobe Photoshop, AutoCAD</div>
+            <div>
+              Microsoft Word, Microsoft Excel, CorelDraw, Adobe Photoshop,
+              AutoCAD
+            </div>
           </div>
         </section>
+        <section>
+          <h3>Code Examples</h3>
+          <div class ="scroll-window">
+            <pre><code>class ContactBRW extends Component {
+              render() {
+                return (
+                  &lt;Container&gt;
+                    &lt;Content&gt;
+                      &lt;Card style={{flex: 0}}&gt;
+                        &lt;CardItem header bordered style={{backgroundColor: '#5ba9d4'}}&gt;
+                          &lt;Icon style={styles.icons} type=&quot;FontAwesome&quot; name=&quot;user&quot; /&gt;
+                          &lt;View&gt;
+                            &lt;Text style={styles.headerText}&gt;{this.props.second_mame}&lt;/Text&gt;
+                            &lt;Text style={styles.headerText}&gt;
+                              {this.props.first_name + ' ' + this.props.patronymic}
+                            &lt;/Text&gt;
+                            &lt;Text style={{color: 111}}&gt;{this.props.post}&lt;/Text&gt;
+                          &lt;/View&gt;
+                        &lt;/CardItem&gt;
+                        &lt;CardItem&gt;
+                          &lt;Icon style={styles.icons} type=&quot;Ionicons&quot; name=&quot;briefcase&quot; /&gt;
+                          &lt;Text style={styles.phST}&gt;{this.props.phone}&lt;/Text&gt;
+                          &lt;Right style={{flexDirection: 'row', justifyContent: 'flex-end'}}&gt;
+                            &lt;Button
+                              transparent
+                              onPress={() =&gt; Linking.openURL(&#x60;tel:${this.props.phone}&#x60;)}&gt;
+                              &lt;Icon
+                                style={styles.icons}
+                                type=&quot;MaterialIcons&quot;
+                                name=&quot;phone&quot;
+                              /&gt;
+                            &lt;/Button&gt;
+                            &lt;Icon
+                              style={styles.icons}
+                              type=&quot;MaterialIcons&quot;
+                              name=&quot;comment&quot;
+                            /&gt;
+                          &lt;/Right&gt;
+                        &lt;/CardItem&gt;
+                        &lt;CardItem&gt;
+                          &lt;Icon
+                            style={styles.icons}
+                            type=&quot;Ionicons&quot;
+                            name=&quot;phone-portrait&quot;
+                          /&gt;
+                          &lt;Text style={styles.phST}&gt;{this.props.phone_hide}&lt;/Text&gt;
+                          &lt;Right style={{flexDirection: 'row', justifyContent: 'flex-end'}}&gt;
+                            &lt;Button
+                              transparent
+                              onPress={() =&gt;
+                                Linking.openURL(&#x60;tel:${this.props.phone_hide}&#x60;)
+                              }&gt;
+                              &lt;Icon
+                                style={styles.icons}
+                                type=&quot;MaterialIcons&quot;
+                                name=&quot;phone&quot;
+                              /&gt;
+                            &lt;/Button&gt;
+                            &lt;Button
+                              transparent
+                              onPress={() =&gt;
+                                Linking.openURL(&#x60;sms:${this.props.phone_hide}&#x60;)
+                              }&gt;
+                              &lt;Icon
+                                style={styles.icons}
+                                type=&quot;MaterialIcons&quot;
+                                name=&quot;comment&quot;
+                              /&gt;
+                            &lt;/Button&gt;
+                          &lt;/Right&gt;
+                        &lt;/CardItem&gt;
+                        {/* &lt;CardItem footer bordered&gt;
+                          &lt;View&gt;
+                            &lt;Text style={{color: '#555'}}&gt;{this.props.category}&lt;/Text&gt;
+                            &lt;Text style={{color: '#555'}}&gt;{this.props.section}&lt;/Text&gt;
+                            &lt;Text style={{color: '#555'}}&gt;{this.props.subsection}&lt;/Text&gt;
+                            &lt;Text style={{color: '#555'}}&gt;{this.props.subsubsection}&lt;/Text&gt;
+                          &lt;/View&gt;
+                        &lt;/CardItem&gt; */}
+                      &lt;/Card&gt;
+                      &lt;Content footer bordered&gt;
+                        &lt;Accordion dataArray={this.props.userAdress} /&gt;
+                      &lt;/Content&gt;
+                    &lt;/Content&gt;
+                  &lt;/Container&gt;
+                );
+              }
+            }</code></pre>
+                  </div>
+                
+        </section>
       </main>
-    </div<>
+    </div>
   </body>
 </html>
