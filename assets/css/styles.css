@@ -1,0 +1,48 @@
+*{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.wrapper {
+  background: tan;
+  margin: auto;
+  width: 100%;
+  max-width: 1024px; /* 2 */
+}
+.separator {
+  background-color: teal;
+  height: 20px;
+  width: 100%;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  background-color: teal;
+}
+.main-information {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-list {
+  padding-left: 0px;
+  padding-inline-start: 0px;
+}
+.contact-list li {
+  list-style-type: none;
+}
+
+#photo {
+    background-image: url("assets/images/profile-photo.jpg");
+    width: 100px;
+    height: 100px;
+}
+
+#profile-photo {
+    width: 200px;
+    height: 200px;
+}
