@@ -1,5 +1,5 @@
 * {
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "M PLUS Rounded 1c", "Arial", sans-serif;
 }
 
 body {
@@ -7,12 +7,26 @@ body {
   background-color: #bab3ab;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: teal;
+  background-color: #b0b0b0;
+}
+
 .parallax {
   position: fixed;
   z-index: -1;
-  background-image: url("../images/background-image.jpg");
   height: 100%;
   width: 100%;
+  background-image: url("../images/background-image.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,8 +35,8 @@ body {
 
 header > .main-information,
 section {
-  background: rgba(255, 255, 255, 0.9);
   padding: 20px 10px 20px 10px;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 nav {
@@ -48,13 +62,13 @@ section:last-child {
 .wrapper {
   margin: auto;
   width: 100%;
-  max-width: 1024px; /* 2 */
+  max-width: 1024px;
 }
 
 .separator {
-  background-color: rgba(0, 0, 0, 0);
   height: 20px;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .content {
@@ -91,8 +105,8 @@ section:last-child {
 .skills > .row {
   display: flex;
   flex-direction: row;
-  background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .skills > .row > div {
@@ -102,8 +116,8 @@ section:last-child {
 }
 
 .skills > .row > div:first-child {
-  font-weight: 500;
   width: 18%;
+  font-weight: 500;
 }
 
 .skills > .row:last-child > div {
