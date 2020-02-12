@@ -1,21 +1,18 @@
 * {
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
+
 body {
-  margin: 0px;
+  margin: 0;
   background-color: #bab3ab;
 }
+
 .parallax {
-  /* The image used */
   position: fixed;
   z-index: -1;
   background-image: url("../images/background-image.jpg");
-
-  /* Set a specific height */
   height: 100%;
   width: 100%;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,67 +24,65 @@ section {
   background: rgba(255, 255, 255, 0.9);
   padding: 20px 10px 20px 10px;
 }
+
 nav {
   display: flex;
   flex-direction: column;
-  margin-top: auto;
+  justify-content: space-between;
 }
+
 header {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
+
 section {
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0 20px 0;
 }
+
 section:last-child {
-  margin: 0px;
+  margin: 0;
 }
+
 .wrapper {
   margin: auto;
   width: 100%;
   max-width: 1024px; /* 2 */
 }
+
 .separator {
   background-color: rgba(0, 0, 0, 0);
   height: 20px;
   width: 100%;
 }
+
 .content {
   display: flex;
   justify-content: center;
-  /*background-color: paleturquoise;*/
-  /*background-color: #232F2D;*/
-  background: rgb(45, 79, 73);
-  background: linear-gradient(
-    90deg,
-    rgba(45, 79, 73, 1) 35%,
-    rgba(50, 89, 107, 1) 100%
-  );
+  background: linear-gradient(90deg, rgba(45, 79, 73, 1) 35%, rgba(50, 89, 107, 1) 100%);
   color: #b1ada8;
 }
+
 .main-information {
   display: flex;
   justify-content: space-between;
 }
+
 .contact-list {
-  padding-left: 0px;
-  padding-inline-start: 0px;
+  padding-left: 0;
+  padding-inline-start: 0;
 }
+
 .contact-list li {
   list-style-type: none;
 }
 
-#photo {
-  background-image: url("../images/profile-photo.jpg");
-  width: 100px;
-  height: 100px;
-}
-
-#profile-photo {
+.profile-photo {
   width: 200px;
   height: 200px;
 }
+
 .skills {
   display: flex;
   flex-direction: column;
@@ -99,25 +94,30 @@ section:last-child {
   background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
 }
+
 .skills > .row > div {
   padding: 5px;
   border: 2px solid black;
-  border-bottom: 0px;
+  border-bottom: 0;
 }
+
 .skills > .row > div:first-child {
   font-weight: 500;
   width: 18%;
 }
+
 .skills > .row:last-child > div {
   border: 2px solid black;
 }
+
 .skills > .row > div:last-child {
   width: 82%;
-  border-left: 0px;
+  border-left: 0;
 }
+
 .scroll-window {
-  height: 300px; /* высота нашего блока */
-  background: #fff; /* цвет фона, белый */
-  border: 1px solid #c1c1c1; /* размер и цвет границы блока */
-  overflow-y: scroll; /* прокрутка по вертикали */
+  height: 300px;
+  background: #ffffff;
+  border: 1px solid #c1c1c1;
+  overflow-y: scroll;
 }
