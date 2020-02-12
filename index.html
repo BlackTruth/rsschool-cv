@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,500,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <title>CV</title>
+  </head>
+  <body>
+    <div class="parallax"></div>
+    <div class="wrapper">
+      <header>
+        <div class="content">
+          <h1>Kanstantsin Kulahin</h1>
+        </div>
+        <div class="main-information">
+          <div>
+            <h3>Junior Web Developer</h3>
+            <img alt="My photo" class="profile-photo" src="assets/images/profile-photo.jpg"/>
+          </div>
+          <nav>
+            <h3>Navigation</h3>
+            <a href="#summary">Summary</a>
+            <a href="#skills">Skills</a>
+            <a href="#code">Code Examples</a>
+            <a href="#career">Career Summary</a>
+            <a href="#education">Education</a>
+            <a href="#english">English Skills</a>
+          </nav>
+          <div>
+            <h3>Contact information</h3>
+            <ul class="contact-list">
+              <li>Phone: +375293798958</li>
+              <li>Email: blacktruth1991@gmail.com</li>
+              <li>Location: Gomel/Belarus/Europe</li>
+              <li>Telegram: @Conmix</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section>
+          <h3 id="summary">Summary</h3>
+          <span>
+            Junior Web developer with 4 year of overall IT experience is seeking
+            an opportunity to enhance Web development knowledge, gain
+            professional experience in new IT sphere and apply for a job. My
+            most advantages are:
+          </span>
+          <ul>
+            <li>Full understanding of IT infrastructure</li>
+            <li>Full understanding of development lifecycle</li>
+            <li>
+              Technical knowledge in high level programming languages such as
+              C++, C#
+            </li>
+            <li>Self-educating</li>
+            <li>Great team worker</li>
+          </ul>
+        </section>
+        <section class="skills">
+          <h3 id="skills">Skills</h3>
+          <div class="row">
+            <div>Environments</div>
+            <div>Windows, Linux, MacOS</div>
+          </div>
+          <div class="row">
+            <div>Programming languages</div>
+            <div>C++, C#, Pascal, Shell</div>
+          </div>
+          <div class="row">
+            <div>Web technologies</div>
+            <div>HTML, CSS, JS, XML, XSLT</div>
+          </div>
+          <div class="row">
+            <div>Databases</div>
+            <div>MS SQL Server, Oracle, MySql, MariaDB, Realm</div>
+          </div>
+          <div class="row">
+            <div>Version controls</div>
+            <div>Git</div>
+          </div>
+          <div class="row">
+            <div>Ticketing system</div>
+            <div>SAP custom ticketing system, Redmine</div>
+          </div>
+          <div class="row">
+            <div>Development tools</div>
+            <div>
+              Microsoft Visual Studio, VS Code, DbVisualizer, Git Bash, Borland
+              C++, Delphi, SQL Server Management Studio, PowerBuilder, Apache
+              Web Server
+            </div>
+          </div>
+          <div class="row">
+            <div>Others</div>
+            <div>
+              Microsoft Word, Microsoft Excel, CorelDraw, Adobe Photoshop,
+              AutoCAD
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3 id="code">Code Examples</h3>
+          <div class="scroll-window">
+            <pre><code>class ContactBRW extends Component {
+              render() {
+                return (
+                  &lt;Container&gt;
+                    &lt;Content&gt;
+                      &lt;Card style={{flex: 0}}&gt;
+                        &lt;CardItem header bordered style={{backgroundColor: '#5ba9d4'}}&gt;
+                          &lt;Icon style={styles.icons} type=&quot;FontAwesome&quot; name=&quot;user&quot; /&gt;
+                          &lt;View&gt;
+                            &lt;Text style={styles.headerText}&gt;{this.props.second_mame}&lt;/Text&gt;
+                            &lt;Text style={styles.headerText}&gt;
+                              {this.props.first_name + ' ' + this.props.patronymic}
+                            &lt;/Text&gt;
+                            &lt;Text style={{color: 111}}&gt;{this.props.post}&lt;/Text&gt;
+                          &lt;/View&gt;
+                        &lt;/CardItem&gt;
+                        &lt;CardItem&gt;
+                          &lt;Icon style={styles.icons} type=&quot;Ionicons&quot; name=&quot;briefcase&quot; /&gt;
+                          &lt;Text style={styles.phST}&gt;{this.props.phone}&lt;/Text&gt;
+                          &lt;Right style={{flexDirection: 'row', justifyContent: 'flex-end'}}&gt;
+                            &lt;Button
+                              transparent
+                              onPress={() =&gt; Linking.openURL(&#x60;tel:${this.props.phone}&#x60;)}&gt;
+                              &lt;Icon
+                                style={styles.icons}
+                                type=&quot;MaterialIcons&quot;
+                                name=&quot;phone&quot;
+                              /&gt;
+                            &lt;/Button&gt;
+                            &lt;Icon
+                              style={styles.icons}
+                              type=&quot;MaterialIcons&quot;
+                              name=&quot;comment&quot;
+                            /&gt;
+                          &lt;/Right&gt;
+                        &lt;/CardItem&gt;
+                        &lt;CardItem&gt;
+                          &lt;Icon
+                            style={styles.icons}
+                            type=&quot;Ionicons&quot;
+                            name=&quot;phone-portrait&quot;
+                          /&gt;
+                          &lt;Text style={styles.phST}&gt;{this.props.phone_hide}&lt;/Text&gt;
+                          &lt;Right style={{flexDirection: 'row', justifyContent: 'flex-end'}}&gt;
+                            &lt;Button
+                              transparent
+                              onPress={() =&gt;
+                                Linking.openURL(&#x60;tel:${this.props.phone_hide}&#x60;)
+                              }&gt;
+                              &lt;Icon
+                                style={styles.icons}
+                                type=&quot;MaterialIcons&quot;
+                                name=&quot;phone&quot;
+                              /&gt;
+                            &lt;/Button&gt;
+                            &lt;Button
+                              transparent
+                              onPress={() =&gt;
+                                Linking.openURL(&#x60;sms:${this.props.phone_hide}&#x60;)
+                              }&gt;
+                              &lt;Icon
+                                style={styles.icons}
+                                type=&quot;MaterialIcons&quot;
+                                name=&quot;comment&quot;
+                              /&gt;
+                            &lt;/Button&gt;
+                          &lt;/Right&gt;
+                        &lt;/CardItem&gt;
+                        {/* &lt;CardItem footer bordered&gt;
+                          &lt;View&gt;
+                            &lt;Text style={{color: '#555'}}&gt;{this.props.category}&lt;/Text&gt;
+                            &lt;Text style={{color: '#555'}}&gt;{this.props.section}&lt;/Text&gt;
+                            &lt;Text style={{color: '#555'}}&gt;{this.props.subsection}&lt;/Text&gt;
+                            &lt;Text style={{color: '#555'}}&gt;{this.props.subsubsection}&lt;/Text&gt;
+                          &lt;/View&gt;
+                        &lt;/CardItem&gt; */}
+                      &lt;/Card&gt;
+                      &lt;Content footer bordered&gt;
+                        &lt;Accordion dataArray={this.props.userAdress} /&gt;
+                      &lt;/Content&gt;
+                    &lt;/Content&gt;
+                  &lt;/Container&gt;
+                );
+              }
+            }</code></pre>
+          </div>
+        </section>
+        <section>
+          <h3 id="career">Career Summary</h3>
+          <div>
+            September 2016 - Present :: Belarussian Railways, Software engineer
+            <p>
+              <i>
+                Outline
+              </i>
+            </p>
+            <p>
+              Development, enhancement and testing of comprehensive economic
+              system integrated with SAP. 2nd and 3rd level IT support for 5k
+              internal company users in Gomel region.
+            </p>
+            <h5>Key responsibilities</h5>
+            <ul>
+              <li>
+                Identifying user issue and delivering workable solution via
+                email, phone or reporting tool
+              </li>
+              <li>
+                Developing and enhancing new components for economical system
+                using C#, SQL, XML, XSLT
+              </li>
+              <li>
+                Improving existing components: increasing performance and
+                decreasing memory usage
+              </li>
+              <li>Integrating existing components with SAP system</li>
+              <li>Providing Excel reports</li>
+            </ul>
+          </div>
+        </section>
+        <section class="skills">
+          <h3 id="education">Education</h3>
+          <div class="row">
+            <div>
+              Feb 2020 - Present
+              <p>RS School</p>
+            </div>
+            <div>
+              in progress
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              Sep 2011 - Jul 2017
+              <p>Gomel State University</p>
+            </div>
+            <div>
+              Faculty: The Faculty of Physics and Information Technologies
+              <p>Department: Automated Systems of Information Processing</p>
+              <p>Degree: IT Engineer</p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              Sep 2007 - Jul 2011
+              <p>
+                Gomel State Engineering College
+              </p>
+            </div>
+            <div>Degree: Technician Programmer</div>
+          </div>
+        </section>
+        <section>
+          <h3 id="english">English Skills</h3>
+          <p>
+            Currently frequents English classes on
+            <a href="https://skyeng.ru/" target="_blank">Skyeng</a>. Current
+            level is A2/B1.
+          </p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
