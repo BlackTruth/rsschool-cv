@@ -22,10 +22,15 @@ body {
   background-size: cover;
 }
 
-header>.main-information,
+header > .main-information,
 section {
   background: rgba(255, 255, 255, 0.9);
   padding: 20px 10px 20px 10px;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
 }
 header {
   display: flex;
@@ -35,7 +40,7 @@ header {
 section {
   margin: 20px 0px 20px 0px;
 }
-section:last-child{
+section:last-child {
   margin: 0px;
 }
 .wrapper {
